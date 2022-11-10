@@ -20,10 +20,15 @@ export const useInput = () => {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+
+  console.log(rates[currency2]);
   const handlerPriceChange1 = (price1) => {
     setPrice2(formatNum((price1 * rates[currency2]) / rates[currency1]));
     setPrice1(price1);
   };
+
+  
+
   const handlerCurrency1 = (currency1) => {
     setPrice2(formatNum((price1 * rates[currency2]) / rates[currency1]));
     setCurrency1(currency1);
