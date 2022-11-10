@@ -2,7 +2,7 @@ import React from "react";
 import Container from "../Container/index";
 import InputWrapper from "../InputWrapper";
 import { useSelector } from "react-redux";
-import { useInput } from "../hooks/useInput";
+import { useInput } from "../../hooks/useInput";
 import styles from "./Header.module.scss";
 
 const Header = () => {

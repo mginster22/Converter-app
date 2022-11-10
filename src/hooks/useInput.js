@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { getAllCurrencies } from "../../api";
-import { setRates } from "../../reducer/curencySlice";
+import { getAllCurrencies } from "../api";
+import { setRates } from "../reducer/curencySlice";
 import { useSelector, useDispatch } from "react-redux";
-import { CONSTANTS } from "../../constants";
+import { CONSTANTS } from "../constants";
 const { BASE_CURRENCY_IN, BASE_CURRENCY_TO, BASE_PRICE_IN, BASE_PRICE_TO } =
   CONSTANTS;
 export const useInput = () => {
